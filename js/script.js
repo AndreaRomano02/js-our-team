@@ -46,10 +46,10 @@ for (let i = 0; i < teamList.length; i++) {
   team = teamList[i];
   console.table(team);
   teamPage += `
-  <li>
-    <p>${team.image}</p>
-    <p>${team.name}</p>
-    <p>${team.role}</p>
+  <li class="card">
+    <a href="#"><img src="img/${team.image}" class="card-img-top img-fluid"></a>
+    <a href="#"><p>${team.name}</p></a>
+    <a href="#"><p>${team.role}</p></a>
   </li>
 `;
 }
